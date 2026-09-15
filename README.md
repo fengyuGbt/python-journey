@@ -57,7 +57,7 @@ python-journey/
 ## How to use this repo
 
 - **Learners**: read `docs/training-plan.md` for the roadmap; do the exercises yourself first, then compare with `code/week1/`. Read the `lessons/` *after* you hit the same bug — the lesson sticks when you've felt the pain.
-- **Contributors**: typo fixes, better explanations, and additional lessons are all welcome. See [CONTRIBUTING] style: keep it bilingual, keep it honest.
+- **Contributors**: typo fixes, better explanations, and additional lessons are all welcome. Keep it bilingual, keep it honest.
 
 ## Roadmap
 
