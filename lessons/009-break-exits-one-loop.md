@@ -80,3 +80,44 @@ def main():
 3. Check the signal immediately: `if x is None: break`.
 
 **Fix**: see the Chinese section above; the full final version is in [`code/week1/calculator.py`](../code/week1/calculator.py).
+
+---
+
+## 原对话摘录 / Original conversation excerpt
+
+> 摘自学习者与 AI 助教的真实对话（2026-09-16）。这是第一篇带原对话摘录的复盘（格式约定见 `lessons/README.md`）。
+
+**学习者贴出的第一版代码（节选，问题所在）**：
+
+```python
+def get_number():
+    while True:
+        try:
+            user_input = input("Enter a number (or 'exit' to quit): ")
+            if user_input.lower() == 'exit':
+                print("Exiting the program.")
+                break          # ← 学习者原以为这会退出整个程序
+            number = float(user_input)
+            return number
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+```
+
+**助教关键点评**：
+
+> "这个 break 跳出的是 `get_number()` 自己的 `while True`，不是 `main()` 的 `while True`——它只跳一层，穿不过函数边界。break 之后没有 return，函数隐式返回 None，main 收到 None 却不知道这是'退出信号'，继续跑，最终 `calculate(None, None, op)` 直接 TypeError 崩溃。"
+
+**学习者修复版的关键改动**：
+
+```python
+if user_input.lower() == 'exit':
+    return None    # 用 return 传信号，而不是 break
+
+# main() 里：
+if user_input1 is None:
+    return         # main 收到信号 → 真正退出整个程序
+```
+
+**助教总结**：
+
+> "break 是'跳出循环'，return 是'回到调用方'。想让 main 知道'用户要退出'，信号只能通过 return 层层传递——被调函数 return → 调用方检查 → 再决定是否退出。"

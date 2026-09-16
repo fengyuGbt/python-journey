@@ -31,3 +31,11 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 | 007 | [输出格式对照清单](./007-output-format-checklist.md) | 交付前逐项对照需求检查。 |
 | 008 | [提示语泄露答案](./008-answer-leaked-in-prompt.md) | 写完当用户跑一遍——参考代码也要审。 |
 | 009 | [break 只跳一层](./009-break-exits-one-loop.md) | `break` 只退一层循环；函数传信号给调用方用 `return`。 |
+
+---
+
+## 格式约定 / Format
+
+- **001–008**：提炼式复盘（无原对话摘录）。
+- **009 起**：每篇末尾附「原对话摘录 / Original conversation excerpt」，保留学习者的原始代码与助教的关键点评，增强现场感。
+- All lessons stay bilingual (中文 + English) unless noted.
