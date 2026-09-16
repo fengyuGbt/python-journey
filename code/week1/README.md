@@ -19,6 +19,7 @@ for each one lives in [`../../lessons/`](../../lessons/).
 | `dedup.py` | Day 5 | — |
 | `enumerate_demo.py` | Day 5 | [007-output-format-checklist](../../lessons/007-output-format-checklist.md) |
 | `guess_v2.py` | Weekend | [004-recursion-overuse](../../lessons/004-recursion-overuse.md), [005-exit-condition-missing](../../lessons/005-exit-condition-missing.md), [008-answer-leaked-in-prompt](../../lessons/008-answer-leaked-in-prompt.md) |
+| `calculator.py` | Weekend | [009-break-exits-one-loop](../../lessons/009-break-exits-one-loop.md) |
 
 Run any file with Python 3.10+:
 

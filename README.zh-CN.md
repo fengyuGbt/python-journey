@@ -48,6 +48,7 @@ python-journey/
 | 006 | [过度校验与吞错误](./lessons/006-over-validation.md) | 拒绝标点等于拒绝合法句子；裸 `except` 把 bug 藏起来。 |
 | 007 | [输出格式对照清单](./lessons/007-output-format-checklist.md) | `enumerate` 从 0 开始、`:` 和 `.` 的区别——交付前逐项对照需求。 |
 | 008 | [提示语泄露答案](./lessons/008-answer-leaked-in-prompt.md) | 提示语把正确答案打出来了。参考代码也要用"用户视角"审查。 |
+| 009 | [break 只跳一层](./lessons/009-break-exits-one-loop.md) | `break` 只退出最近一层循环；函数要传退出信号给调用方，用 `return`，不能靠 `break`。 |
 
 ## 问答（双语）
 

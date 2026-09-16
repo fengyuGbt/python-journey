@@ -48,6 +48,7 @@ python-journey/
 | 006 | [Over-validation & swallowed errors](./lessons/006-over-validation.md) | Rejecting punctuation rejects valid sentences; bare `except` hides bugs. |
 | 007 | [Output format checklist](./lessons/007-output-format-checklist.md) | `enumerate` starts at 0; `:` vs `.` — check requirements item by item before delivery. |
 | 008 | [Answer leaked in the prompt](./lessons/008-answer-leaked-in-prompt.md) | The prompt showed the secret answer. Even reference code needs a user-eye review. |
+| 009 | [break exits one loop only](./lessons/009-break-exits-one-loop.md) | `break` only exits the innermost loop; signal the caller with `return None`, not `break`. |
 
 ## Q&A (bilingual)
 
