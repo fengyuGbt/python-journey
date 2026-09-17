@@ -13,6 +13,7 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 | 007 | [Output-format checklist](./007-output-format-checklist.md) | Check requirements item by item before delivery. |
 | 008 | [Answer leaked in prompt](./008-answer-leaked-in-prompt.md) | Play through your code as a user — even reference code. |
 | 009 | [break exits one loop only](./009-break-exits-one-loop.md) | `break` exits one loop level; signal the caller with `return`. |
+| 010 | [Remove scaffolding](./010-clean-code-scaffolding.md) | No comment corpses, no leftover hints — ship clean code. |
 
 ---
 
@@ -31,6 +32,7 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 | 007 | [输出格式对照清单](./007-output-format-checklist.md) | 交付前逐项对照需求检查。 |
 | 008 | [提示语泄露答案](./008-answer-leaked-in-prompt.md) | 写完当用户跑一遍——参考代码也要审。 |
 | 009 | [break 只跳一层](./009-break-exits-one-loop.md) | `break` 只退一层循环；函数传信号给调用方用 `return`。 |
+| 010 | [清理脚手架](./010-clean-code-scaffolding.md) | 不留注释尸体、不留提示注释——交付干净代码。 |
 
 ---
 

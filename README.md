@@ -15,7 +15,7 @@ Most "learn Python" repos show polished, perfect code. This one does the opposit
 
 | Level | Theme | Weeks | Status |
 |---|---|---|---|
-| L1 | Syntax basics | 1–4 | 🔄 In progress (week 1 done) |
+| L1 | Syntax basics | 1–4 | 🔄 In progress (week 2, day 1 done) |
 | L2 | Core advanced (OOP, generators, decorators, pytest, scraping) | 5–8 | ⏳ |
 | L3 | Data & Web (Pandas, SQL, FastAPI, deployment) | 9–14 | ⏳ |
 | L4 | Engineering (testing, Docker, CI/CD, design patterns) | 15–22 | ⏳ |
@@ -49,6 +49,7 @@ python-journey/
 | 007 | [Output format checklist](./lessons/007-output-format-checklist.md) | `enumerate` starts at 0; `:` vs `.` — check requirements item by item before delivery. |
 | 008 | [Answer leaked in the prompt](./lessons/008-answer-leaked-in-prompt.md) | The prompt showed the secret answer. Even reference code needs a user-eye review. |
 | 009 | [break exits one loop only](./lessons/009-break-exits-one-loop.md) | `break` only exits the innermost loop; signal the caller with `return None`, not `break`. |
+| 010 | [Remove scaffolding: ship clean code](./lessons/010-clean-code-scaffolding.md) | No comment corpses, no leftover hints — delivered code is clean production code. |
 
 ## Q&A (bilingual)
 

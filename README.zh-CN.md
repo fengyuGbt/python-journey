@@ -15,7 +15,7 @@
 
 | 等级 | 主题 | 周数 | 状态 |
 |---|---|---|---|
-| L1 | 语法基础 | 1–4 | 🔄 进行中（第 1 周已完成） |
+| L1 | 语法基础 | 1–4 | 🔄 进行中（第 2 周第 1 天完成） |
 | L2 | 进阶核心（OOP、生成器、装饰器、pytest、爬虫） | 5–8 | ⏳ |
 | L3 | 数据与 Web（Pandas、SQL、FastAPI、部署） | 9–14 | ⏳ |
 | L4 | 工程化（测试、Docker、CI/CD、设计模式） | 15–22 | ⏳ |
@@ -49,6 +49,7 @@ python-journey/
 | 007 | [输出格式对照清单](./lessons/007-output-format-checklist.md) | `enumerate` 从 0 开始、`:` 和 `.` 的区别——交付前逐项对照需求。 |
 | 008 | [提示语泄露答案](./lessons/008-answer-leaked-in-prompt.md) | 提示语把正确答案打出来了。参考代码也要用"用户视角"审查。 |
 | 009 | [break 只跳一层](./lessons/009-break-exits-one-loop.md) | `break` 只退出最近一层循环；函数要传退出信号给调用方，用 `return`，不能靠 `break`。 |
+| 010 | [清理脚手架](./lessons/010-clean-code-scaffolding.md) | 不留注释尸体、不留提示注释——交付的代码是干净的生产版。 |
 
 ## 问答（双语）
 
