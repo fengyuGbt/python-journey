@@ -56,6 +56,7 @@ python-journey/
 
 - [`while True` 是什么？为什么用它？](./qa/while-true.md)
 - [英文单词 `enumerate` 是什么意思？](./qa/enumerate-word.md)
+- [sorted(字典.items()) 为什么返回列表？遍历时为什么不用 .items()？](./qa/sorted-items-type.md)
 
 ## 如何使用
 

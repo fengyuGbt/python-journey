@@ -56,6 +56,7 @@ python-journey/
 
 - [What is `while True` and why use it?](./qa/while-true.md)
 - [What does the English word `enumerate` mean?](./qa/enumerate-word.md)
+- [Why does `sorted(dict.items())` return a list?](./qa/sorted-items-type.md)
 
 ## How to use this repo
 
