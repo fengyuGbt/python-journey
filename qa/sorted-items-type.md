@@ -24,6 +24,29 @@ print(sorted(students.items())[0])     # ('Alice', 85)
 
 `dict_items` 是一个**视图**——像列表一样能迭代，但不是列表。`sorted()` 把任何可迭代对象"拍扁"成一个新的普通列表，之后的一切都是列表操作。
 
+**延伸：视图 vs 快照（View vs Snapshot）**
+
+学习者追问："快照和视图有点混淆。" 补充分辨：
+
+**一句话：视图 = 活的眼睛（盯着现场看），快照 = 定格的照片（拍完就独立）。**
+
+```python
+d = {"a": 1}
+v = d.items()          # 视图（活的眼睛）
+s = list(d.items())    # 快照（定格的照片）
+
+d["b"] = 2             # 字典变了！
+
+print(d)               # {'a': 1, 'b': 2}
+print(v)               # dict_items([('a', 1), ('b', 2)])   ← 视图跟着变！
+print(s)               # [('a', 1)]                          ← 快照一动不动！
+```
+
+- **视图**（`.items()` / `.keys()` / `.values()`）：**不复制数据**，只是盯着字典看——字典一变，它立刻反映。
+- **快照**（`sorted(...)` / `list(...)` / `.copy()` / `[:]`）：**复制出独立副本**，定格在创建那一刻，之后与原对象无关。
+
+**串回练习③**：`students.items()` 是视图（活）；`sorted(...)` 把视图"拍成"快照列表——所以 `ranked` 与字典脱钩，`students` 再变它也不动。看到"眼睛"知道是活的，看到"照片"知道是死的。
+
 ---
 
 ## English
@@ -40,6 +63,17 @@ print(sorted(students.items())[0])     # ('Alice', 85)
 
 `dict_items` is a **view** — iterable like a list, but not a list. `sorted()` flattens any iterable into a new plain list; everything after that is plain list operations.
 
+**Follow-up: View vs Snapshot**
+
+The learner later asked: "I'm confused about snapshot vs view."
+
+**One-liner: a view is a living eye (watching the scene); a snapshot is a frozen photo (independent once taken).**
+
+- **View** (`.items()` / `.keys()` / `.values()`): **copies no data** — it just watches the dict; when the dict changes, the view reflects it immediately.
+- **Snapshot** (`sorted(...)` / `list(...)` / `.copy()` / `[:]`): **creates an independent copy**, frozen at creation time, unrelated to the original afterwards.
+
+**Back to exercise ③**: `students.items()` is a view (alive); `sorted(...)` "photographs" the view into a snapshot list — so `ranked` is decoupled from the dict; changes to `students` never touch it. See the "eye" → it's alive; see the "photo" → it's frozen.
+
 ---
 
 ## 原对话摘录 / Original conversation excerpt
@@ -53,3 +87,11 @@ print(sorted(students.items())[0])     # ('Alice', 85)
 **助教回答要点**：
 
 > "对，`sorted()` 排完永远返回一个'新列表'——不管输入是字典、集合还是字符串……遍历时不需要 `.items()`，是因为你已经不在遍历字典了——你遍历的是 `ranked`（列表），直接对每个元组解包。`.items()` 是字典的专属开关：只有当你直接遍历字典本体时，Python 只产出键，拿不到值，这时才需要 `.items()`。"
+
+**学习者追问（快照 vs 视图）**：
+
+> "快照和视图这个我有点混淆，你能不能再提醒一下我？"
+
+**助教回答要点**：
+
+> "视图 = 活的眼睛（盯着现场看），快照 = 定格的照片（拍完就独立）。`v = d.items()` 不复制数据，只是盯着 d 看——所以 d 一加 'b'，它立刻'看到'；`s = list(d.items())` 是复制出来的独立列表，之后 d 怎么变都跟它无关。记忆锚点：`items/keys/values` 给你眼睛（视图），`sorted/list/copy/[:]` 给你照片（快照）。"
