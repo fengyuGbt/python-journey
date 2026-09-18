@@ -50,6 +50,7 @@ python-journey/
 | 008 | [提示语泄露答案](./lessons/008-answer-leaked-in-prompt.md) | 提示语把正确答案打出来了。参考代码也要用"用户视角"审查。 |
 | 009 | [break 只跳一层](./lessons/009-break-exits-one-loop.md) | `break` 只退出最近一层循环；函数要传退出信号给调用方，用 `return`，不能靠 `break`。 |
 | 010 | [清理脚手架](./lessons/010-clean-code-scaffolding.md) | 不留注释尸体、不留提示注释——交付的代码是干净的生产版。 |
+| 011 | [刻意练习：用新方法重做旧任务](./lessons/011-deliberate-practice-new-tools.md) | 能用旧方法完成 ≠ 完成练习。验收标准是"用了今天的方法"。 |
 
 ## 问答（双语）
 

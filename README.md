@@ -50,6 +50,7 @@ python-journey/
 | 008 | [Answer leaked in the prompt](./lessons/008-answer-leaked-in-prompt.md) | The prompt showed the secret answer. Even reference code needs a user-eye review. |
 | 009 | [break exits one loop only](./lessons/009-break-exits-one-loop.md) | `break` only exits the innermost loop; signal the caller with `return None`, not `break`. |
 | 010 | [Remove scaffolding: ship clean code](./lessons/010-clean-code-scaffolding.md) | No comment corpses, no leftover hints — delivered code is clean production code. |
+| 011 | [Deliberate practice: redo with new tools](./lessons/011-deliberate-practice-new-tools.md) | Working the old way ≠ completing the exercise. The criterion is today's method. |
 
 ## Q&A (bilingual)
 
