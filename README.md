@@ -52,6 +52,7 @@ python-journey/
 | 010 | [Remove scaffolding: ship clean code](./lessons/010-clean-code-scaffolding.md) | No comment corpses, no leftover hints — delivered code is clean production code. |
 | 011 | [Deliberate practice: redo with new tools](./lessons/011-deliberate-practice-new-tools.md) | Working the old way ≠ completing the exercise. The criterion is today's method. |
 | 012 | [int() rejects decimals](./lessons/012-int-vs-float.md) | Amounts, measurements, division results → use `float()`, not `int()`. |
+| 013 | [global modifies the global](./lessons/013-global-modifies-global.md) | `global` is the switch that makes assignment write to the global. |
 
 ## Q&A (bilingual)
 

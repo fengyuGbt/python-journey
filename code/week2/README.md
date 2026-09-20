@@ -13,6 +13,9 @@ Runnable, final versions of every exercise from L2 Week 1 (dict & set).
 | `calculator_lib.py` | Day 3 | functions + docstrings + `calculate()` dispatch; see [012-int-vs-float](../../lessons/012-int-vs-float.md) |
 | `format_amount.py` | Day 3 | `float()` + f-string thousands separator `:,.2f` |
 | `args_kwargs_demo.py` | Day 3 | `*args` sum + `**kwargs` query string |
+| `counter_closure.py` | Day 4 | `nonlocal` counter; independent closure state |
+| `multiplier_factory.py` | Day 4 | closure factory `make_multiplier(n)` |
+| `global_analysis.py` | Day 4 | LEGB + `global` analysis; see [013-global-modifies-global](../../lessons/013-global-modifies-global.md) |
 
 Run any file with Python 3.10+:
 

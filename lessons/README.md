@@ -16,6 +16,7 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 | 010 | [Remove scaffolding](./010-clean-code-scaffolding.md) | No comment corpses, no leftover hints — ship clean code. |
 | 011 | [Deliberate practice](./011-deliberate-practice-new-tools.md) | Redo familiar tasks with new tools — the criterion is today's method. |
 | 012 | [int() rejects decimals](./012-int-vs-float.md) | Amounts / measurements / division → `float()`, not `int()`. |
+| 013 | [global modifies the global](./013-global-modifies-global.md) | `global` is the switch that makes assignment write to the global. |
 
 ---
 
@@ -37,6 +38,7 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 | 010 | [清理脚手架](./010-clean-code-scaffolding.md) | 不留注释尸体、不留提示注释——交付干净代码。 |
 | 011 | [刻意练习](./011-deliberate-practice-new-tools.md) | 用新方法重做旧任务——验收标准是"用了今天的方法"。 |
 | 012 | [int() 拒绝小数](./012-int-vs-float.md) | 金额/测量/除法结果 → 用 `float()`，别用 `int()`。 |
+| 013 | [global 让赋值修改全局](./013-global-modifies-global.md) | `global` 恰恰是"让函数内赋值改全局"的开关。 |
 
 ---
 
