@@ -51,6 +51,7 @@ python-journey/
 | 009 | [break exits one loop only](./lessons/009-break-exits-one-loop.md) | `break` only exits the innermost loop; signal the caller with `return None`, not `break`. |
 | 010 | [Remove scaffolding: ship clean code](./lessons/010-clean-code-scaffolding.md) | No comment corpses, no leftover hints — delivered code is clean production code. |
 | 011 | [Deliberate practice: redo with new tools](./lessons/011-deliberate-practice-new-tools.md) | Working the old way ≠ completing the exercise. The criterion is today's method. |
+| 012 | [int() rejects decimals](./lessons/012-int-vs-float.md) | Amounts, measurements, division results → use `float()`, not `int()`. |
 
 ## Q&A (bilingual)
 

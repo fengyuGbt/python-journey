@@ -15,6 +15,7 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 | 009 | [break exits one loop only](./009-break-exits-one-loop.md) | `break` exits one loop level; signal the caller with `return`. |
 | 010 | [Remove scaffolding](./010-clean-code-scaffolding.md) | No comment corpses, no leftover hints — ship clean code. |
 | 011 | [Deliberate practice](./011-deliberate-practice-new-tools.md) | Redo familiar tasks with new tools — the criterion is today's method. |
+| 012 | [int() rejects decimals](./012-int-vs-float.md) | Amounts / measurements / division → `float()`, not `int()`. |
 
 ---
 
@@ -35,6 +36,7 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 | 009 | [break 只跳一层](./009-break-exits-one-loop.md) | `break` 只退一层循环；函数传信号给调用方用 `return`。 |
 | 010 | [清理脚手架](./010-clean-code-scaffolding.md) | 不留注释尸体、不留提示注释——交付干净代码。 |
 | 011 | [刻意练习](./011-deliberate-practice-new-tools.md) | 用新方法重做旧任务——验收标准是"用了今天的方法"。 |
+| 012 | [int() 拒绝小数](./012-int-vs-float.md) | 金额/测量/除法结果 → 用 `float()`，别用 `int()`。 |
 
 ---
 

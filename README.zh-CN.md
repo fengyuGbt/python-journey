@@ -51,6 +51,7 @@ python-journey/
 | 009 | [break 只跳一层](./lessons/009-break-exits-one-loop.md) | `break` 只退出最近一层循环；函数要传退出信号给调用方，用 `return`，不能靠 `break`。 |
 | 010 | [清理脚手架](./lessons/010-clean-code-scaffolding.md) | 不留注释尸体、不留提示注释——交付的代码是干净的生产版。 |
 | 011 | [刻意练习：用新方法重做旧任务](./lessons/011-deliberate-practice-new-tools.md) | 能用旧方法完成 ≠ 完成练习。验收标准是"用了今天的方法"。 |
+| 012 | [int() 拒绝小数](./lessons/012-int-vs-float.md) | 金额、测量、除法结果 → 用 `float()`，别用 `int()`。 |
 
 ## 问答（双语）
 
