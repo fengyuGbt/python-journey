@@ -59,6 +59,8 @@ python-journey/
 - [What is `while True` and why use it?](./qa/while-true.md)
 - [What does the English word `enumerate` mean?](./qa/enumerate-word.md)
 - [Why does `sorted(dict.items())` return a list?](./qa/sorted-items-type.md)
+- [What do ruff warnings F401 / F541 mean?](./qa/ruff-warnings-f401-f541.md)
+- [pip says "from versions: none" — what now?](./qa/pip-no-matching-distribution.md)
 
 ## How to use this repo
 

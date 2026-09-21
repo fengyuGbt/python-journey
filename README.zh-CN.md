@@ -59,6 +59,8 @@ python-journey/
 - [`while True` 是什么？为什么用它？](./qa/while-true.md)
 - [英文单词 `enumerate` 是什么意思？](./qa/enumerate-word.md)
 - [sorted(字典.items()) 为什么返回列表？遍历时为什么不用 .items()？](./qa/sorted-items-type.md)
+- [ruff 告警 F401 / F541 是什么意思？](./qa/ruff-warnings-f401-f541.md)
+- [pip 报 "from versions: none" 怎么办？](./qa/pip-no-matching-distribution.md)
 
 ## 如何使用
 
