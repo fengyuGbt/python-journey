@@ -16,6 +16,7 @@ Runnable, final versions of every exercise from L2 Week 1 (dict & set).
 | `counter_closure.py` | Day 4 | `nonlocal` counter; independent closure state |
 | `multiplier_factory.py` | Day 4 | closure factory `make_multiplier(n)` |
 | `global_analysis.py` | Day 4 | LEGB + `global` analysis; see [013-global-modifies-global](../../lessons/013-global-modifies-global.md) |
+| `ledger.py` | Weekend | Ledger CLI v1: add/list/total/by; typed + ruff-clean; see [014-copy-paste-index-bug](../../lessons/014-copy-paste-index-bug.md) |
 
 Run any file with Python 3.10+:
 

@@ -53,6 +53,7 @@ python-journey/
 | 011 | [Deliberate practice: redo with new tools](./lessons/011-deliberate-practice-new-tools.md) | Working the old way ≠ completing the exercise. The criterion is today's method. |
 | 012 | [int() rejects decimals](./lessons/012-int-vs-float.md) | Amounts, measurements, division results → use `float()`, not `int()`. |
 | 013 | [global modifies the global](./lessons/013-global-modifies-global.md) | `global` is the switch that makes assignment write to the global. |
+| 014 | [Copy-pasted index bug](./lessons/014-copy-paste-index-bug.md) | Changed the command, forgot the index — count elements before indexing. |
 
 ## Q&A (bilingual)
 
