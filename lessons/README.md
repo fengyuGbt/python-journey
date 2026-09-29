@@ -18,6 +18,7 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 | 012 | [int() rejects decimals](./012-int-vs-float.md) | Amounts / measurements / division → `float()`, not `int()`. |
 | 013 | [global modifies the global](./013-global-modifies-global.md) | `global` is the switch that makes assignment write to the global. |
 | 014 | [Copy-pasted index bug](./014-copy-paste-index-bug.md) | Changed the command, forgot the index — count elements before indexing. |
+| 015 | [open() without with](./015-open-without-with.md) | Every `open()` needs `with`; open each file once; methods need `()`. |
 
 ---
 
@@ -41,6 +42,7 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 | 012 | [int() 拒绝小数](./012-int-vs-float.md) | 金额/测量/除法结果 → 用 `float()`，别用 `int()`。 |
 | 013 | [global 让赋值修改全局](./013-global-modifies-global.md) | `global` 恰恰是"让函数内赋值改全局"的开关。 |
 | 014 | [复制粘贴改了命令没改下标](./014-copy-paste-index-bug.md) | 复制代码要逐行核对下标；取值前先数清有几个元素。 |
+| 015 | [第二个 open() 没关](./015-open-without-with.md) | 每个 `open()` 都要 `with`；一个文件只开一次；方法要带 `()`。 |
 
 ---
 
