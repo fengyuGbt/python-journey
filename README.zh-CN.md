@@ -55,6 +55,7 @@ python-journey/
 | 013 | [global 让赋值修改全局](./lessons/013-global-modifies-global.md) | `global` 恰恰是"让函数内赋值改全局"的开关。 |
 | 014 | [复制粘贴改了命令没改下标](./lessons/014-copy-paste-index-bug.md) | 复制代码要逐行核对下标；取值前先数清有几个元素。 |
 | 015 | [第二个 open() 没关](./lessons/015-open-without-with.md) | 每个 `open()` 都要 `with`；一个文件只开一次；方法要带 `()`。 |
+| 016 | [定义了 main() 却没调用](./lessons/016-main-never-called.md) | `def` 只登记；脚本末尾写 `if __name__ == "__main__": main()`。 |
 
 ## 问答（双语）
 

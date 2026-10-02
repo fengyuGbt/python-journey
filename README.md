@@ -55,6 +55,7 @@ python-journey/
 | 013 | [global modifies the global](./lessons/013-global-modifies-global.md) | `global` is the switch that makes assignment write to the global. |
 | 014 | [Copy-pasted index bug](./lessons/014-copy-paste-index-bug.md) | Changed the command, forgot the index — count elements before indexing. |
 | 015 | [open() without with](./lessons/015-open-without-with.md) | Every `open()` needs `with`; open each file once; methods need `()`. |
+| 016 | [Defined main(), never called](./lessons/016-main-never-called.md) | `def` only registers; end scripts with `if __name__ == "__main__": main()`. |
 
 ## Q&A (bilingual)
 
