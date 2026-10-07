@@ -64,6 +64,7 @@ python-journey/
 - [Why does `sorted(dict.items())` return a list?](./qa/sorted-items-type.md)
 - [What do ruff warnings F401 / F541 mean?](./qa/ruff-warnings-f401-f541.md)
 - [pip says "from versions: none" — what now?](./qa/pip-no-matching-distribution.md)
+- [Error handling: return None, raise, or let it bubble?](./qa/raise-or-return-none.md)
 
 ## How to use this repo
 

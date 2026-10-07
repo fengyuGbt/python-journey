@@ -64,6 +64,7 @@ python-journey/
 - [sorted(字典.items()) 为什么返回列表？遍历时为什么不用 .items()？](./qa/sorted-items-type.md)
 - [ruff 告警 F401 / F541 是什么意思？](./qa/ruff-warnings-f401-f541.md)
 - [pip 报 "from versions: none" 怎么办？](./qa/pip-no-matching-distribution.md)
+- [出错时：返回 None / 异常冒泡 / raise？raise 之后的代码还执行吗？](./qa/raise-or-return-none.md)
 
 ## 如何使用
 

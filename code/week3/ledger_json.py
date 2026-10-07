@@ -11,6 +11,9 @@ def load_records():
             return json.load(f)
     except FileNotFoundError:
         return []
+    except json.JSONDecodeError:
+        print("Error: Failed to decode JSON from the data file.")
+        return []
 
 def save_records(records):
     """每次变更后保存"""
