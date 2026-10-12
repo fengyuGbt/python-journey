@@ -14,6 +14,8 @@ Runnable, final versions of every exercise from L1 Week 3 (files & exceptions).
 | `use_calc.py` | Day 4 | imports `calc`, interactive CLI, `if __name__ == "__main__"` guard |
 | `word_count_counter.py` | Day 4 | character frequency with `collections.Counter` in one line (`isalpha()` filters all non-letters) |
 | `countdown.py` | Day 4 | `date.fromisoformat` countdown with past/today/bad-input handling |
+| `finder.py` | Day 5 | CLI recursive file search (`--dir --ext --keyword`); excludes `.venv`/`.git`/`__pycache__`, prints relative paths; see [018-cli-tooling-contracts-noise-copy-paste](../../lessons/018-cli-tooling-contracts-noise-copy-paste.md) |
+| `rename.py` | Day 5 | CLI batch rename (`--dir --prefix --dry-run`); dry-run safety valve, sorted iteration, numbered from 1 |
 
 Run any file with Python 3.10+:
 
