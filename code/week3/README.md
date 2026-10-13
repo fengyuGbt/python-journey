@@ -16,6 +16,7 @@ Runnable, final versions of every exercise from L1 Week 3 (files & exceptions).
 | `countdown.py` | Day 4 | `date.fromisoformat` countdown with past/today/bad-input handling |
 | `finder.py` | Day 5 | CLI recursive file search (`--dir --ext --keyword`); excludes `.venv`/`.git`/`__pycache__`, prints relative paths; see [018-cli-tooling-contracts-noise-copy-paste](../../lessons/018-cli-tooling-contracts-noise-copy-paste.md) |
 | `rename.py` | Day 5 | CLI batch rename (`--dir --prefix --dry-run`); dry-run safety valve, sorted iteration, numbered from 1 |
+| `organizer.py` | Weekend | file organizer / auto-archive: classify by extension into subdirs, `--dry-run`, `--log`, conflict renaming, per-file error protection; snapshot-before-modify lesson; see [019-weekend-project-snapshot-race-acceptance](../../lessons/019-weekend-project-snapshot-race-acceptance.md) |
 
 Run any file with Python 3.10+:
 
