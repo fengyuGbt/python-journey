@@ -15,7 +15,7 @@
 
 | 等级 | 主题 | 周数 | 状态 |
 |---|---|---|---|
-| L1 | 语法基础 | 1–4 | 🔄 进行中（第 2 周第 1 天完成） |
+| L1 | 语法基础 | 1–4 | 🔄 进行中（第 4 周第 1 天完成） |
 | L2 | 进阶核心（OOP、生成器、装饰器、pytest、爬虫） | 5–8 | ⏳ |
 | L3 | 数据与 Web（Pandas、SQL、FastAPI、部署） | 9–14 | ⏳ |
 | L4 | 工程化（测试、Docker、CI/CD、设计模式） | 15–22 | ⏳ |
@@ -31,7 +31,10 @@ python-journey/
 ├── docs/
 │   └── training-plan.md   # L1–L5 完整培训计划
 ├── code/
-│   └── week1/             # 修复后可运行的练习代码（L1 第 1 周）
+│   ├── week1/             # 修复后可运行的练习代码（L1 第 1 周）
+│   ├── week2/             # L1 第 2 周（字典、函数）
+│   ├── week3/             # L1 第 3 周（文件、异常、模块、CLI、周末项目）
+│   └── week4/             # L1 第 4 周（坑清单复盘 014–019）
 ├── lessons/               # 错误复盘（双语）——本仓库的核心
 └── qa/                    # 学习问答（双语）
 ```
@@ -56,6 +59,10 @@ python-journey/
 | 014 | [复制粘贴改了命令没改下标](./lessons/014-copy-paste-index-bug.md) | 复制代码要逐行核对下标；取值前先数清有几个元素。 |
 | 015 | [第二个 open() 没关](./lessons/015-open-without-with.md) | 每个 `open()` 都要 `with`；一个文件只开一次；方法要带 `()`。 |
 | 016 | [定义了 main() 却没调用](./lessons/016-main-never-called.md) | `def` 只登记；脚本末尾写 `if __name__ == "__main__": main()`。 |
+| 017 | [比较表达式当语句是死代码；except 必须匹配 raise](./lessons/017-dead-comparison-except-mismatch.md) | 比较不 if 不赋值=丢弃；except 接的是 raise 抛的那个类型，用语义正确的原生类型。 |
+| 018 | [CLI 工具化：契约、噪音与复制残留](./lessons/018-cli-tooling-contracts-noise-copy-paste.md) | 方法返回值要用；输入格式与内部结构契约统一（py vs .py）；判断写反要复查；复制残留要清。 |
+| 019 | [周末项目翻车现场：快照竞态](./lessons/019-weekend-project-snapshot-race-acceptance.md) | 遍历目录时绝不修改目录——先快照再处理；dry-run 过了不等于真跑能过。 |
+| 020 | [第 4 周知识补漏：前三周坑清单复盘](./lessons/020-week4-trap-list-review.md) | `is_file()` 会掩盖竞态；`len(x)` 是公共 API、`__len__()` 是内部钩子；边界测试必须含空输入。 |
 
 ## 问答（双语）
 

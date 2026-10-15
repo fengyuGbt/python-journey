@@ -15,7 +15,7 @@ Most "learn Python" repos show polished, perfect code. This one does the opposit
 
 | Level | Theme | Weeks | Status |
 |---|---|---|---|
-| L1 | Syntax basics | 1–4 | 🔄 In progress (week 2, day 1 done) |
+| L1 | Syntax basics | 1–4 | 🔄 In progress (week 4, day 1 done) |
 | L2 | Core advanced (OOP, generators, decorators, pytest, scraping) | 5–8 | ⏳ |
 | L3 | Data & Web (Pandas, SQL, FastAPI, deployment) | 9–14 | ⏳ |
 | L4 | Engineering (testing, Docker, CI/CD, design patterns) | 15–22 | ⏳ |
@@ -31,7 +31,10 @@ python-journey/
 ├── docs/
 │   └── training-plan.md   # Full L1–L5 curriculum (中文)
 ├── code/
-│   └── week1/             # Fixed, runnable exercise code (L1 week 1)
+│   ├── week1/             # Fixed, runnable exercise code (L1 week 1)
+│   ├── week2/             # L1 week 2 (dicts, functions)
+│   ├── week3/             # L1 week 3 (files, exceptions, modules, CLI, weekend organizer)
+│   └── week4/             # L1 week 4 (trap-list review, 014–019)
 ├── lessons/               # Bug post-mortems (bilingual) — the heart of this repo
 └── qa/                    # Learning Q&A (bilingual)
 ```
@@ -56,6 +59,10 @@ python-journey/
 | 014 | [Copy-pasted index bug](./lessons/014-copy-paste-index-bug.md) | Changed the command, forgot the index — count elements before indexing. |
 | 015 | [open() without with](./lessons/015-open-without-with.md) | Every `open()` needs `with`; open each file once; methods need `()`. |
 | 016 | [Defined main(), never called](./lessons/016-main-never-called.md) | `def` only registers; end scripts with `if __name__ == "__main__": main()`. |
+| 017 | [Dead comparison; except type mismatch](./lessons/017-dead-comparison-except-mismatch.md) | A comparison used as a statement is dead code; `except` must match the type that `raise` throws — use the native semantic type. |
+| 018 | [CLI tooling: contracts, noise, residue](./lessons/018-cli-tooling-contracts-noise-copy-paste.md) | Use method return values; unify the input/format contract (`py` vs `.py`); double-check inverted logic; scrub copy-paste residue. |
+| 019 | [Weekend project: snapshot race](./lessons/019-weekend-project-snapshot-race-acceptance.md) | Never modify a directory while iterating it — snapshot first, then process; dry-run passing ≠ real run passing. |
+| 020 | [Week 4 trap-list review (014–019 redone)](./lessons/020-week4-trap-list-review.md) | `is_file()` can mask a race; `len(x)` is public API, `__len__()` is an internal hook; edge tests must include empty input. |
 
 ## Q&A (bilingual)
 
