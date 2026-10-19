@@ -112,15 +112,17 @@ A：自查"函数内有没有和 import/全局名同名的赋值"。`date = date
 
 ---
 
-## 英语 5 词（本轮技术词，造句作业 pending）
+## 英语 5 词（造句通过 ✅ 2026-10-19）
 
-| 词 | 例句 |
-|---|---|
-| persist | Data must **persist** across restarts — that's why every change is saved to `ledger.json`. |
-| fallback | The main-loop `try/except` is a **fallback**: any error just prints and continues. |
-| shadowing | `date = date.today()` caused **shadowing** — the local variable hid the imported one. |
-| contract | Changing a function's return value breaks its **contract** with all callers. |
-| refactor | We **refactored** from a menu-driven loop to a command-line interface. |
+| 词 | 例句 | 我的造句 |
+|---|---|---|
+| persist | Data must **persist** across restarts — that's why every change is saved to `ledger.json`. | Something must persist across restarts. |
+| fallback | The main-loop `try/except` is a **fallback**: any error just prints and continues. | The try/except is a fallback when an error occurs. |
+| shadowing | `date = date.today()` caused **shadowing** — the local variable hid the imported one. | Naming a local variable date caused shadowing. |
+| contract | Changing a function's return value breaks its **contract** with all callers. | Changing the return value from a list to None breaks the contract with callers. |
+| refactor | We **refactored** from a menu-driven loop to a command-line interface. | We refactored from a menu-driven loop to a command-line tool. |
+
+批改要点：单数可数名词前要冠词（an error）；`name` 用双宾语（name X date），不用 with；`change...from A to B` 固定搭配。
 
 ---
 
