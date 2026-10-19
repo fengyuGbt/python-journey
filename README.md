@@ -15,7 +15,7 @@ Most "learn Python" repos show polished, perfect code. This one does the opposit
 
 | Level | Theme | Weeks | Status |
 |---|---|---|---|
-| L1 | Syntax basics | 1–4 | 🔄 In progress (week 4, day 2 done: 20/20 comprehensive exercises) |
+| L1 | Syntax basics | 1–4 | 🔄 In progress (week 4 done: 20/20 exercises + **ledger v2 passed — L1 acceptance project**) |
 | L2 | Core advanced (OOP, generators, decorators, pytest, scraping) | 5–8 | ⏳ |
 | L3 | Data & Web (Pandas, SQL, FastAPI, deployment) | 9–14 | ⏳ |
 | L4 | Engineering (testing, Docker, CI/CD, design patterns) | 15–22 | ⏳ |
@@ -35,6 +35,7 @@ python-journey/
 │   ├── week2/             # L1 week 2 (dicts, functions)
 │   ├── week3/             # L1 week 3 (files, exceptions, modules, CLI, weekend organizer)
 │   └── week4/             # L1 week 4 (trap-list review 014–019 + 20 comprehensive exercises)
+│   └── ledger-v2/         # L1 acceptance project: command-line ledger (persistence + .bak backup)
 ├── lessons/               # Bug post-mortems (bilingual) — the heart of this repo
 └── qa/                    # Learning Q&A (bilingual)
 ```
@@ -64,6 +65,7 @@ python-journey/
 | 019 | [Weekend project: snapshot race](./lessons/019-weekend-project-snapshot-race-acceptance.md) | Never modify a directory while iterating it — snapshot first, then process; dry-run passing ≠ real run passing. |
 | 020 | [Week 4 trap-list review (014–019 redone)](./lessons/020-week4-trap-list-review.md) | `is_file()` can mask a race; `len(x)` is public API, `__len__()` is an internal hook; edge tests must include empty input. |
 | 021 | [20 comprehensive exercises (20/20)](./lessons/021-week4-20-comprehensive-exercises.md) | Slice only deduped results; `strip()` trims ends only; `float(None)` raises `TypeError`; dict is mutable (side effects); `key=lambda` sorting. |
+| 022 | [L1 acceptance: ledger v2](./lessons/022-ledger-v2.md) | Import style = call style; local variables shadow imports (`UnboundLocalError`); print-inside vs return breaks callers; refactor menu→CLI; ruff `--fix` + `noqa`. |
 
 ## Q&A (bilingual)
 
