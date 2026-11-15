@@ -20,6 +20,16 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 | 014 | [Copy-pasted index bug](./014-copy-paste-index-bug.md) | Changed the command, forgot the index — count elements before indexing. |
 | 015 | [open() without with](./015-open-without-with.md) | Every `open()` needs `with`; open each file once; methods need `()`. |
 | 016 | [Defined main(), never called](./016-main-never-called.md) | `def` only registers; end scripts with `if __name__ == "__main__": main()`. |
+| 017 | [Dead comparison; except type must match raise](./017-dead-comparison-except-mismatch.md) | A bare comparison does nothing; catch exactly the type that was raised. |
+| 018 | [CLI tooling: contracts, noise, copy-paste residue](./018-cli-tooling-contracts-noise-copy-paste.md) | A CLI's output is a contract; strip debug noise and copy residue. |
+| 019 | [Weekend project: snapshot race & real-world acceptance](./019-weekend-project-snapshot-race-acceptance.md) | Snapshot the directory before mutating it; accept with real files. |
+| 020 | [Week 4 trap-list review (014–019 redone)](./020-week4-trap-list-review.md) | Redo old traps from memory, not by copying the lesson. |
+| 021 | [Week 4 comprehensive exercises (20/20)](./021-week4-20-comprehensive-exercises.md) | 20 mixed tasks, each hand-written and run: 20/20. |
+| 022 | [L1 acceptance: Ledger v2](./022-ledger-v2.md) | Command CLI + JSON persistence, accepted with ruff clean. |
+| 023 | [`__init__` returns `None` — who creates the object?](./023-init-returns-none.md) | `__init__` furnishes the object; `__new__` creates it; the class call returns it. |
+| 024 | [Typing annotations & `@classmethod`](./024-typing-annotations-classmethod.md) | `self` decides ownership, `return` decides annotation; `cls()` builds instances. |
+| 025 | [Python question collection (Sept–Oct)](./025-python-qa-collection.md) | `is` vs `==`, constructor params, `with` protocol, `**` unpacking, return vs print. |
+| 026 | [10 OOP words — spoken recap](./026-oop-english-10-words.md) | Say each term in a full sentence: class-name case, plurals, part of speech. |
 
 ---
 
@@ -45,6 +55,16 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 | 014 | [复制粘贴改了命令没改下标](./014-copy-paste-index-bug.md) | 复制代码要逐行核对下标；取值前先数清有几个元素。 |
 | 015 | [第二个 open() 没关](./015-open-without-with.md) | 每个 `open()` 都要 `with`；一个文件只开一次；方法要带 `()`。 |
 | 016 | [定义了 main() 却没调用](./016-main-never-called.md) | `def` 只登记；脚本末尾写 `if __name__ == "__main__": main()`。 |
+| 017 | [比较表达式当语句用是死代码；except 类型必须匹配 raise](./017-dead-comparison-except-mismatch.md) | 单写一行比较什么都不做；`except` 要抓对 `raise` 的类型。 |
+| 018 | [CLI 工具化：契约、噪音与复制残留](./018-cli-tooling-contracts-noise-copy-paste.md) | CLI 的输出就是契约；清掉调试噪音和复制残留。 |
+| 019 | [周末项目：快照竞态与真实工具验收](./019-weekend-project-snapshot-race-acceptance.md) | 边遍历边改目录会翻车——先做快照；拿真实目录验收。 |
+| 020 | [第 4 周坑清单复盘（014–019 重做）](./020-week4-trap-list-review.md) | 靠记忆重做旧坑，不抄 lesson。 |
+| 021 | [20 道综合练习题复盘（20/20）](./021-week4-20-comprehensive-exercises.md) | 20 题每题手写并运行验收，20/20。 |
+| 022 | [L1 验收项目：Ledger v2（记账本）](./022-ledger-v2.md) | 命令式 CLI + JSON 持久化，ruff 0 错验收通过。 |
+| 023 | [`__init__` 为什么返回 `None`](./023-init-returns-none.md) | `__init__` 只装修，`__new__` 造对象，类调用才返回实例。 |
+| 024 | [类型注解与 `@classmethod`](./024-typing-annotations-classmethod.md) | `self` 决定归属，`return` 决定注解；`cls()` 负责造实例。 |
+| 025 | [历史提问合集（9–10 月）](./025-python-qa-collection.md) | `is` vs `==`、构造参数、`with` 协议、`**` 解包、返回与打印的分工。 |
+| 026 | [10 个 OOP 词英语作业（首次复述批改）](./026-oop-english-10-words.md) | 每个词要能说成整句；类名大写、单复数、词性三处最容易错。 |
 
 ---
 
@@ -52,4 +72,5 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 
 - **001–008**：提炼式复盘（无原对话摘录）。
 - **009 起**：每篇末尾附「原对话摘录 / Original conversation excerpt」，保留学习者的原始代码与助教的关键点评，增强现场感。
+- **023 起**：概念澄清 / 提问归档式——结论前置，配可复现实证（代码 + 真实终端输出）。**025** 为历史提问合集，其余新增提问按编号继续单独成篇。
 - All lessons stay bilingual (中文 + English) unless noted.
