@@ -30,6 +30,17 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 | 024 | [Typing annotations & `@classmethod`](./024-typing-annotations-classmethod.md) | `self` decides ownership, `return` decides annotation; `cls()` builds instances. |
 | 025 | [Python question collection (Sept–Oct)](./025-python-qa-collection.md) | `is` vs `==`, constructor params, `with` protocol, `**` unpacking, return vs print. |
 | 026 | [10 OOP words — spoken recap](./026-oop-english-10-words.md) | Say each term in a full sentence: class-name case, plurals, part of speech. |
+| 027 | [Week 6 Day 1: iterators & generators](./027-w6d1-iterators-generators.md) | One-shot, stateful, forward-only: `yield from`, lazy read, sort before `groupby`. |
+| 028 | [`yield from` — how it works](./028-yield-from-mechanism.md) | A for-loop plus delegation: sub-generator `return`, any iterable, PEP 380 channels. |
+| 029 | [How two iterators “merge” into one list](./029-chain-how-two-iterators-merge.md) | `chain` only orders, `list()` collects; one source active at a time. |
+| 030 | [Why the inner `StopIteration` does not break](./030-why-inner-stopiteration-does-not-break.md) | It is swallowed inside `yield from`; only a finished generator signals outward. |
+| 031 | [`*args` vs `**kwargs`](./031-args-vs-kwargs.md) | `*` gathers positional into a tuple, `**` gathers keyword into a dict; at the call site they unpack. |
+| 032 | [The two `return`s in a decorator](./032-two-returns-in-decorator.md) | Inner returns the data, outer returns the function; drop either and it breaks. |
+| 033 | [How to remember and write decorators](./033-how-to-remember-decorators.md) | Five-line skeleton; brackets after `@` decide two layers vs three. |
+| 034 | [`functools.wraps` and why multi-layer](./034-wraps-and-why-multiple-layers.md) | Keep name/doc/signature; layers exist because values arrive at different times. |
+| 035 | [Why the `@retry` counter must live inside `wrapper`](./035-retry-counter-scope.md) | Per-call state belongs in the per-call layer; loop beats recursive retry. |
+| 036 | [When does a call need `try`](./036-when-call-needs-try.md) | Judge by whether the call ultimately propagates an exception, not by decoration. |
+| 037 | [Day 2 wrap-up: `@lru_cache` and its tiny `hits`](./037-day2-four-decorators-and-lru-cache.md) | Four decorator drills; hits counts cache returns, not saved calls. |
 
 ---
 
@@ -65,6 +76,17 @@ Real bug post-mortems from the journey, in Chinese and English. Read each one *a
 | 024 | [类型注解与 `@classmethod`](./024-typing-annotations-classmethod.md) | `self` 决定归属，`return` 决定注解；`cls()` 负责造实例。 |
 | 025 | [历史提问合集（9–10 月）](./025-python-qa-collection.md) | `is` vs `==`、构造参数、`with` 协议、`**` 解包、返回与打印的分工。 |
 | 026 | [10 个 OOP 词英语作业（首次复述批改）](./026-oop-english-10-words.md) | 每个词要能说成整句；类名大写、单复数、词性三处最容易错。 |
+| 027 | [第 6 周 Day 1：迭代器与生成器](./027-w6d1-iterators-generators.md) | 一次性、有状态、只能往前；`groupby` 前先排序，每组当场 `list()`。 |
+| 028 | [`yield from` 的原理](./028-yield-from-mechanism.md) | 等于 for+delegate：接住子生成器 return、可接任意 iterable、PEP 380 双向通道。 |
+| 029 | [两个迭代器怎么“合并”成列表](./029-chain-how-two-iterators-merge.md) | `chain` 只负责顺序，`list()` 才负责收集；同一时刻只有一个源在活动。 |
+| 030 | [内层 StopIteration 为什么不会 break](./030-why-inner-stopiteration-does-not-break.md) | 子迭代器的结束在 `yield from` 内部被吞；只有整个生成器结束才对外发信号。 |
+| 031 | [`*args` 与 `**kwargs` 的区别](./031-args-vs-kwargs.md) | 单星号收位置参数成 tuple，双星号收关键字成 dict；调用时反过来是拆包。 |
+| 032 | [装饰器里的两个 return](./032-two-returns-in-decorator.md) | 里层交回数据、外层交回函数；缺任一个都会坏。 |
+| 033 | [装饰器怎么记、怎么写](./033-how-to-remember-decorators.md) | 五行骨架；看 `@` 后有无括号判断两层还是三层。 |
+| 034 | [`functools.wraps` 有什么用、为什么包多层](./034-wraps-and-why-multiple-layers.md) | 保住名字/文档/签名；层数取决于参数到达时机，压成一层必崩。 |
+| 035 | [@retry 的计数为什么必须放在 wrapper 里](./035-retry-counter-scope.md) | 一次调用的状态要放在每次调用都重跑的那层；循环优于递归。 |
+| 036 | [什么时候调用需要 try 接住](./036-when-call-needs-try.md) | 看这次调用最终会不会向外抛异常，不看它有没有被装饰。 |
+| 037 | [Day 2 四练收尾：lru_cache 的 hits 为什么这么小](./037-day2-four-decorators-and-lru-cache.md) | 四道装饰器练习汇总；hits 统计命中次数，不是省下的调用数。 |
 
 ---
 
